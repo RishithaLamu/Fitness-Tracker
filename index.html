@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header>
+    <h1>🏋 My Fitness Tracker</h1>
+    <p>Every Workout Makes You Stronger 💪</p>
+</header>
+
+<div class="login-container">
+
+    <h2>Welcome Back!</h2>
+
+    <form id="loginForm">
+
+        <div class="input-box">
+            <i class="fa-solid fa-user"></i>
+            <input type="email" id="username" placeholder="Email" required>
+        </div>
+
+        <div class="input-box">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit" class="login-btn">Log In</button>
+
+    </form>
+
+    <div class="links">
+        <a href="signup.html">Create Account</a>
+        <a href="page.html">Continue as Guest</a>
+    </div>
+
+</div>
+
+<div class="date-container">
+    <h2 id="current-date"></h2>
+</div>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>

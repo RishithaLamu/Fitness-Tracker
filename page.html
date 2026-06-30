@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+
+
+
+<body>
+
+<header>
+
+    <h1>🏋 My Fitness Tracker</h1>
+    <p>Every Workout Makes You Stronger 💪</p>
+
+
+</header>
+<div class="home">
+     <i class="fa fa-home"></i>
+    <a href="index.html" class="nav">Back to Home</a>
+   
+</div>
+
+<div class="container">
+
+    <section class="glass">
+
+    <h2>Today's Exercise</h2>
+
+    <!-- Cardio -->
+    <div class="exercise-card">
+
+        <div class="exercise-header">
+            <h3>🏃 Cardio</h3>
+            <input type="checkbox" id="cardio-complete">
+        </div>
+
+        <div class="input-row">
+            <label for="cardio-duration">Duration (min)</label>
+            <input type="number" id="cardio-duration" placeholder="">
+        </div>
+
+        <div class="input-row">
+            <label for="cardio-calories">Calories</label>
+            <input type="number" id="cardio-calories" placeholder="">
+        </div>
+    </div>
+
+    <!-- Strength -->
+    <div class="exercise-card">
+        <div class="exercise-header">
+            <h3>💪 Strength Training</h3>
+            <input type="checkbox" id="strength-complete" >
+        </div>
+
+        <div class="input-row">
+            <label for="strength-duration">Duration (min)</label>
+            <input type="number" id="strength-duration" placeholder="">
+        </div>
+
+        <div class="input-row">
+            <label for="strength-calories">Calories</label>
+            <input type="number" id="strength-calories" placeholder="" >
+        </div>
+    </div>
+
+    <!-- Yoga -->
+    <div class="exercise-card">
+        <div class="exercise-header">
+            <h3>🧘 Yoga</h3>
+            <input type="checkbox" id="yoga-complete" >
+        </div>
+        <div class="input-row">
+            <label for="yoga-duration">Duration (min)</label>
+            <input type="number" id="yoga-duration" placeholder="">
+        </div>
+
+        <div class="input-row">
+            <label for="yoga-calories">Calories</label>
+            <input type="number" id="yoga-calories" placeholder="" >
+        </div>
+    </div>
+
+</section>
+    <!-- Nutrition -->
+
+    <section class="glass">
+
+        <h2>Nutrition</h2>
+
+        <div class="meal">
+
+            <label>🍳 Breakfast</label>
+<input type="text" id="breakfast" placeholder="What did you eat?">
+
+
+        </div>
+
+        <div class="meal">
+
+            <label>🥪 Lunch</label>
+            <input type="text" id="lunch" placeholder="What did you eat?">
+        </div>
+
+        <div class="meal">
+
+            <label>🍲 Dinner</label>
+            <input type="text" id="dinner" placeholder="What did you eat?">
+        </div>
+
+    </section>
+
+    <!-- Stats -->
+
+    <section class="glass stats">
+
+        <div class="stat">
+            <h3>🔥 Calories</h3>
+            <label for="calories">Calories intake:</label>
+        
+            <input type="number" id="calories" value="">
+        </div>
+
+        <div class="stat">
+            <h3>💧 Water</h3>
+            <label for="water">Water intake (ml):</label>
+            <input type="number" id="water" value="">
+        </div>
+
+        <div class="stat">
+            <h3>😴 Sleep</h3>
+            <label for="sleep">Sleep duration (hours):</label>
+            <input type="number" id="sleep" value="">
+        </div>
+
+        <div class="stat">
+            <h3>⚖ Weight</h3>
+            <label for="weight">Current weight (kg):</label>
+            <input type="number" id="weight" value="">
+        </div>
+
+    </section>
+
+    <button class="save-btn">
+        Save Today's Progress
+    </button>
+
+</div>
+
+<div class="date-container">
+    <h2 id="current-date"></h2>
+</div>
+
+<script src="index.js"></script>
+
+</body>
